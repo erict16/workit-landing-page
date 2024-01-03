@@ -1,8 +1,20 @@
-
 /* Mobile first */
 
+@font-face {
+    font-family: 'Fraunces'; /* Choose a name for your font family */
+    src: url('assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('truetype'); /* Path to your font file */
+    /* Include additional formats for better browser compatibility */
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format('truetype');
+}
+
 :root {
-    --eucaplyptus: #44FFA1
+    --eucaplyptus: #44FFA1;
+    --dark-purple: #24053E;
+    --davys-grey: #584D62;
 }
 
 * {
@@ -17,9 +29,60 @@ nav {
 
 }
 
-main {
-
+h2 {
+    padding-top: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px; /* 128.571% */
+    color: var(--dark-purple, #24053E);
 }
+
+p {
+    padding-top: 16px;
+    text-align: center;
+    font-family: Manrope;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+    width: 343px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 0 16px 0 16px;
+}
+
+body {
+    font-family: Manrope, sans-serif;
+}
+
+h1, h2 {
+    font-family: Fraunces, sans-serif;
+}
+
+button {
+    background-color: var(--eucaplyptus);
+    font-family: Manrope;
+    font-weight: 700;
+    padding: 12px 24px;
+    border: none;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 32px; /* 200% */
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 74px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+/* Class */
 
 .top-image {
     position: absolute;
@@ -32,14 +95,107 @@ main {
 .second-image {
     position: absolute;
     z-index: -2;
-    width: 100%;
-    height: auto;
-    top: 392px
+    width: 375px;
+    top: 392px;
 }
 
 .underline {
     text-decoration: none;
-    border-bottom: 2px solid var(--eucaplyptus, #44FFA1);
+    border-bottom: 3px solid var(--eucaplyptus, #44FFA1);
     display: inline-block;
     color: white;
+    padding-bottom: 3px;
 }
+
+.hero-section {
+    margin: 64px 16px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+}
+
+.hero-image {
+    content: url("assets/images/image-hero.webp");
+    width: 298px;
+    height: 178px;
+    margin-inline: 30px;
+}
+
+.number-title {
+    border-radius: 50%;
+    border: 1px solid var(--davys-grey, #584D62);
+    width: 48px;
+    height: 46px;
+    flex-shrink: 0;
+    color: var(--dark-purple, #24053E);
+    text-align: center;
+    font-family: Fraunces;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.testimonial-section {
+    padding-top: 172px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 343px;
+
+}
+
+.testimonial-box {
+    /*padding: 32px;*/
+    background-color: var(--dark-purple);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 343px;
+    height: 375px;
+}
+
+.testimonial-box h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px; /* 150% */
+}
+
+.testimonial-box p {
+    width: 281px;
+}
+
+.testimonial-box button {
+    margin-top: 24px;
+}
+
+
+.founder-image {
+    width: 265px;
+    position: relative;
+    bottom: -50px;
+    z-index: -2;
+}
+
+.contact-logo {
+    display: flex;
+    margin-top: 80px;
+    gap: 30px;
+}
+
+
+
+
+
+
