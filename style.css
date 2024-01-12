@@ -85,17 +85,18 @@ footer {
 /* Class */
 
 .top-image {
+    content: url("assets/images/Rectangle-mobile.png");
     position: absolute;
     z-index: -1;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 481px;
 }
 
 .second-image {
     position: absolute;
     z-index: -2;
-    width: 375px;
+    width: 100%;
     top: 392px;
 }
 
@@ -108,7 +109,7 @@ footer {
 }
 
 .hero-section {
-    margin: 64px 16px;
+    margin: 54px 16px;
     font-size: 28px;
     font-weight: 600;
     text-align: center;
@@ -194,6 +195,14 @@ footer {
     gap: 30px;
 }
 
+/* Desktop view */
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    
+
+    .second-image {
+        
+    }
+}
 
 
 
