@@ -206,6 +206,13 @@ footer {
     justify-content: center;
 }
 
+.intro-column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Desktop view */
 @media screen and (min-width: 800px) {
     .top-image {
@@ -215,10 +222,9 @@ footer {
 
     .second-image {
         content: url("assets/images/Rectangle-second-desktop.png");
-        height: 560px;
+        height: 1060px;
         top: 404px;
     }
 
-    .intro-section {
-    }
+    
 }
