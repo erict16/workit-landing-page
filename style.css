@@ -1,20 +1,22 @@
 /* Mobile first */
 
 @font-face {
-    font-family: 'Fraunces'; /* Choose a name for your font family */
-    src: url('assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf') format('truetype'); /* Path to your font file */
+    font-family: "Fraunces"; /* Choose a name for your font family */
+    src: url("assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf")
+        format("truetype"); /* Path to your font file */
     /* Include additional formats for better browser compatibility */
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format('truetype');
+    font-family: "Manrope";
+    src: url("assets/fonts/manrope/Manrope-VariableFont_wght.ttf")
+        format("truetype");
 }
 
 :root {
-    --eucaplyptus: #44FFA1;
-    --dark-purple: #24053E;
-    --davys-grey: #584D62;
+    --eucaplyptus: #44ffa1;
+    --dark-purple: #24053e;
+    --davys-grey: #584d62;
 }
 
 * {
@@ -26,7 +28,6 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 32px 16px;
-
 }
 
 h2 {
@@ -34,7 +35,7 @@ h2 {
     font-size: 28px;
     font-weight: 600;
     line-height: 36px; /* 128.571% */
-    color: var(--dark-purple, #24053E);
+    color: var(--dark-purple, #24053e);
 }
 
 p {
@@ -58,7 +59,8 @@ body {
     font-family: Manrope, sans-serif;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: Fraunces, sans-serif;
 }
 
@@ -104,7 +106,7 @@ footer {
 
 .underline {
     text-decoration: none;
-    border-bottom: 3px solid var(--eucaplyptus, #44FFA1);
+    border-bottom: 3px solid var(--eucaplyptus, #44ffa1);
     display: inline-block;
     color: white;
     padding-bottom: 3px;
@@ -129,11 +131,11 @@ footer {
 
 .number-title {
     border-radius: 50%;
-    border: 1px solid var(--davys-grey, #584D62);
+    border: 1px solid var(--davys-grey, #584d62);
     width: 48px;
     height: 46px;
     flex-shrink: 0;
-    color: var(--dark-purple, #24053E);
+    color: var(--dark-purple, #24053e);
     text-align: center;
     font-family: Fraunces;
     font-size: 20px;
@@ -153,7 +155,6 @@ footer {
     justify-items: center;
     align-items: center;
     width: 343px;
-
 }
 
 .testimonial-box {
@@ -183,7 +184,6 @@ footer {
 .testimonial-box button {
     margin-top: 24px;
 }
-
 
 .founder-image {
     width: 265px;
@@ -220,11 +220,5 @@ footer {
     }
 
     .intro-section {
-        
     }
 }
-
-
-
-
-
